@@ -251,6 +251,14 @@ namespace Altseed
         }
 
         /// <summary>
+        /// エンジンからノードを全て削除します。
+        /// </summary>
+        public static void ClearNodes()
+        {
+            _RootNode.ClearNodes();
+        }
+
+        /// <summary>
         /// エンジンからノードを削除します。
         /// </summary>
         public static void RemoveNode(Node node)

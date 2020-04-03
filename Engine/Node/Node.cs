@@ -114,6 +114,16 @@ namespace Altseed
         }
 
         /// <summary>
+        /// 子要素をすべて削除します
+        /// </summary>
+        public void ClearNodes()
+        {
+            foreach (var c in Children)
+                if (c.Status == RegisterStatus.Registered)
+                    RemoveChildNode(c);
+        }
+
+        /// <summary>
         /// 子要素を削除します。
         /// </summary>
         /// <param name="node">削除する要素</param>
