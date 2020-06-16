@@ -14,3 +14,4 @@ using System.Runtime.InteropServices;
 //
 
 [assembly: InternalsVisibleTo("Test")]
+[assembly: InternalsVisibleTo("fslib2")]
